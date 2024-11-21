@@ -23,8 +23,6 @@ class EvaluationRequest(BaseModel):
 class EvaluationResponse(BaseModel):
     rating: str
     explanation: str
-    business_idea: str                 # Add this line
-    location: str                      # Add this line
     competitors: Optional[List[dict]] = []
     corrected_location: str
     corrected_business_idea: str
@@ -34,4 +32,3 @@ class EvaluationResponse(BaseModel):
     financial_projection: Optional[FinancialProjection] = None
     risks: Optional[List[RiskAssessment]] = []
     mitigation_strategies: Optional[List[str]] = []
-    action_plan: Optional[str] = None  # Ensure this line is included

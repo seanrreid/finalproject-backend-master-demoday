@@ -1,6 +1,6 @@
 # backend/models.py
 from db import Base
-from sqlalchemy import Column, Integer, String, Text
+from sqlalchemy import Column, Integer, String
 
 class BusinessIdea(Base):
     __tablename__ = 'business_ideas'
@@ -20,5 +20,4 @@ class Evaluation(Base):
     location = Column(String, nullable=False)
     rating = Column(String, nullable=False)
     explanation = Column(String, nullable=False)
-    action_plan = Column(Text, nullable=True)
     # Add other fields as necessary
