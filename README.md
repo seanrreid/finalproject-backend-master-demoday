@@ -80,3 +80,4 @@ Follow these instructions to set up and run **Hatchery AI** on your local machin
    ```bash
    git clone https://github.com/yourusername/hatchery-ai.git
    cd hatchery-ai/backend
+# finalproject-backend-master-demoday
